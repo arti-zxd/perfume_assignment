@@ -14,7 +14,7 @@ body {
 }
 .container {
   position: relative;
-  background: url("/assets/section_1.png") no-repeat center center/cover;
+  background: url("./assets/section_1.png") no-repeat center center/cover;
   background-size: cover;
   background-position: center;
   height: 794px;
