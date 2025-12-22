@@ -13,9 +13,9 @@ const nextButton = document.querySelector(".next");
 let currentIndex = 0;
 
 const imageSources = [
-  "/assets/image_1.png",
-  "/assets/image_2.png",
-  "/assets/image_3.png",
+  "./assets/image_1.png",
+  "./assets/image_2.png",
+  "./assets/image_3.png",
 ];
 
 // Function to update the main image and active dot
