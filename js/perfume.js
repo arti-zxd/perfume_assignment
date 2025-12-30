@@ -81,3 +81,16 @@ doubleRadio.addEventListener('change', () => {
     doubleContent.style.display = 'block';
   }
 });
+const items = document.querySelectorAll(".accordion-item");
+
+items.forEach(item => {
+  item.addEventListener("click", () => {
+    items.forEach(i => {
+      i.classList.remove("active");
+      i.querySelector(".icon").textContent = "+";
+    });
+
+    item.classList.add("active");
+    item.querySelector(".icon").textContent = "−";
+  });
+});
