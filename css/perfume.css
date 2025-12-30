@@ -593,3 +593,224 @@ hr {
   color: #ffffff;
   text-decoration: underline;
 }
+
+ 
+  /* ======================
+     RESPONSIVE
+  ====================== */
+  
+  /* TABLET */
+  @media (max-width: 992px) {
+    .container {
+      padding: 0 30px;
+      background: url("/assets/section_1.png") no-repeat center center/cover;
+    }
+  
+    .tagline h1 {
+      font-size: 44px;
+    }
+  
+    .stats {
+      gap: 30px;
+    }
+    .section-2 {
+        grid-template-columns: 1fr;
+        padding: 40px;
+      }
+    
+      .fragrance-options {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .collection {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 60px 40px;
+      }
+      .heading {
+        font-size: 32px;
+      }
+      .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+    
+      .stat-item h2 {
+        font-size: 40px;
+      }
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .promo-section {
+      margin-top: 60px;
+    }
+  
+    .tagline h1 {
+      font-size: 36px;
+    }
+  
+    .stats {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .section-2 {
+        padding: 20px;
+      }
+    
+      .right-heading {
+        font-size: 26px;
+      }
+    
+      .fragrance-options {
+        grid-template-columns: 1fr;
+      }
+    
+      .bottom-image {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    
+      .btn {
+        width: 100%;
+      }
+      .collection {
+        padding: 40px 20px;
+      }
+    
+      .heading {
+        font-size: 26px;
+      }
+    
+      .accordion-header {
+        font-size: 16px;
+      }
+    
+      .accordion-item {
+        padding: 14px 16px;
+      }
+      .stats-section {
+        padding: 40px 20px;
+      }
+    
+      .stats-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    
+      .stat-item h2 {
+        font-size: 34px;
+      }
+    
+      .stat-item p {
+        font-size: 13px;
+      }
+      .section-title {
+        font-size: 28px;
+      }
+    
+      .comparison-table,
+      .comparison-table thead,
+      .comparison-table tbody,
+      .comparison-table th,
+      .comparison-table td,
+      .comparison-table tr {
+        display: block;
+      }
+    
+      .comparison-table thead {
+        display: none;
+      }
+    
+      .comparison-table tr {
+        border: 1px solid #333;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        padding: 12px;
+      }
+    
+      .comparison-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: none;
+        font-size: 14px;
+      }
+    
+      .comparison-table td::before {
+        content: attr(data-label);
+        color: #999;
+        font-weight: 500;
+      }
+    
+      .highlight {
+        background: #f1fff6;
+        border-radius: 8px;
+        padding: 8px;
+      }
+      .footer {
+        padding: 50px 24px;
+      }
+    
+      .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    
+      .footer-links {
+        gap: 40px;
+      }
+    
+      .newsletter-form {
+        flex-direction: column;
+      }
+    
+      .newsletter-form button {
+        width: 100%;
+      }
+    
+      .footer-gtg {
+        margin-bottom: 30px;
+      }
+  }
+  
+  /* SMALL MOBILE */
+  @media (max-width: 480px) {
+    .tagline h1 {
+      font-size: 30px;
+    }
+  
+    .shop-now-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @media (max-width: 1024px) {
+    .comparison-section {
+      padding: 60px 20px;
+    }
+  
+    .comparison-table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .footer {
+        padding: 60px 40px;
+      }
+    
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+    
+      .footer-newsletter {
+        grid-column: span 2;
+      }
+  }
