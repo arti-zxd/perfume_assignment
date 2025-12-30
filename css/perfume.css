@@ -16,7 +16,7 @@ body {
 .container {
   min-height: 100vh;
   /* background: linear-gradient(to bottom, #cfe3eb 0%, #ffffff 70%); */
-  background: url("/assets/section_1.png") no-repeat center center/cover;
+  background: url("../assets/section_1.png") no-repeat center center/cover;
   padding: 0 60px;
   height: 794px;
 }
